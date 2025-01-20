@@ -1,8 +1,215 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
-.quicksand{
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+* {
+  background: #ffffff;
+}
+.quicksand {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+/* Shared Style */
+.display-flex {
+  display: flex;
+}
+.bg-image {
+  background-image: url(../assets/bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.text-gray {
+  color: #202020;
+}
+.text-light-gray {
+  color: #808080;
+}
+/* Navbar */
+.navbar,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo-kid {
+  width: 62px;
+  height: 62px;
+}
+/* only on responsive */
+.menu-icon {
+  display: none;
+}
+.brand {
+  align-items: center;
+}
+.nav-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+.nav-link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+.nav-item {
+  list-style: none;
+  margin-right: 20px;
+}
+#list-color1 {
+  color: orange;
+}
+#list-color2 {
+  color: skyblue;
+}
+#list-color3 {
+  color: #05d4df;
+}
+#list-color4 {
+  color: #5d58ef;
+}
+.btn-primary {
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 197px;
+  height: 50px;
+  background: #fea301;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+}
+/* Banner content */
+.banner-content {
+  width: 40rem;
+  height: 20.5rem;
+}
+.banner-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.banner-description {
+  font-size: 1.25rem;
+}
+#color-org {
+  color: #fea301;
+}
+#skyblue {
+  color: skyblue;
+}
+.btn-secondary {
+  width: 197px;
+  height: 50px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.btn-secondary:hover {
+  background: #ffffff;
+  color: black;
+  border: 1px solid black;
+}
+.banner > img {
+  max-width: 468px;
+  max-height: 575px;
+  width: 100%;
+}
+main {
+  margin-bottom: 3.75rem;
+}
+/* curriculum section */
+.std-curriculum {
+  border: 2px solid red;
+}
+.curriculum-title {
+  font-size: 2.9rem;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  background: transparent;
+}
+.all-cards {
+    border: 2px solid green;
+  max-width: 1200px;
+  max-height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  margin: 0 auto;
+}
+.card1 {
+  width: 350px;
+  height: 470px;
+  padding: 30px;
+  background: linear-gradient(180deg, #def5ff 0%, rgba(255, 255, 255, 0) 40%), #ffffff;
+  border: 1px solid #def5ff;
+  box-shadow: inset 0px 0px 28.2958px 0.943193px rgba(0, 0, 0, 0.05);
+  border-radius: 18px;
+}
+.card2 {
+  width: 350px;
+  height: 470px;
+  padding: 30px;
+  background: linear-gradient(180deg, #fff4dc 0%, rgba(255, 255, 255, 0) 40%),
+    #ffffff;
+  border: 1px solid #fff4dc;
+  box-shadow: inset 0px 0px 28.2958px 0.943193px rgba(0, 0, 0, 0.05);
+  border-radius: 18px;
+}
+.card3 {
+  width: 350px;
+  height: 470px;
+  padding: 30px;
+  background: linear-gradient(180deg, #eee1ff 0%, rgba(255, 255, 255, 0) 40%),
+    #ffffff;
+  border: 1px solid #f2e8ff;
+  box-shadow: inset 0px 0px 28.2958px 0.943193px rgba(0, 0, 0, 0.05);
+  border-radius: 18px;
+}
+.card-image {
+  background: transparent;
+}
+.card-title {
+  font-size: 1.54rem;
+  font-weight: 700;
+  background: transparent;
+}
+.card-description {
+  font-size: 1rem;
+  font-weight: 500;
+  background: transparent;
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 430px) {
+  .navbar {
+    border: 0.5px solid #fea301;
+    padding: 15px;
+  }
+  #logo-kid,
+  .menu-icon {
+    display: flex;
+  }
+  .nav-title,
+  .nav-links,
+  .btn-primary {
+    display: none;
+  }
+  .banner {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
 }
