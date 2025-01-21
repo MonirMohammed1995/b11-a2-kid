@@ -35,6 +35,9 @@
     );
   background-repeat: no-repeat;
 }
+.bg-solid{
+  background: #01ACFD;
+}
 .text-gray {
   color: #202020;
 }
@@ -364,6 +367,31 @@ main {
   padding: 0 40px;
   justify-content: center;
 }
+/* Footer section */
+.footer-info{
+  border: 2px solid rebeccapurple;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.kids-education{
+  max-width: 300px;
+}
+.footer-image{
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
+}
+.kids-education{
+  display: flex;
+  background: transparent;
+  color: #ffffff;
+}
+.kids-summary, .footer-content,.kids-description,.about-school{
+  background: transparent;
+}
+
 
 /* Responsive for mobile */
 @media screen and (max-width: 576px) {
