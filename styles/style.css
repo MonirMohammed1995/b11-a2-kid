@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   background: #ffffff;
+}
+
+.raleway-btn-card {
+  font-family: "Raleway", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .quicksand {
   font-family: "Quicksand", serif;
@@ -15,6 +22,7 @@
 }
 .bg-image {
   background-image: url(../assets/bg.png);
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -151,8 +159,10 @@ main {
   margin-bottom: 3.75rem;
 }
 /* curriculum section */
-.std-curriculum {
+.std-curriculum,.our-stories {
   /* border: 2px solid red; */
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .curriculum-title,
 .stories-title {
@@ -267,15 +277,15 @@ main {
   margin: 80px 0 60px 0;
 }
 /* Section end */
-.our-stories {
+ /* {
   border: 2px solid red;
-}
+} */
 .collage{
   background: transparent;
   gap: 40px;
   display: flex;
   justify-content: center;
-  max-width: 1440px;
+  max-width: 1300px;
   margin: 0 auto;
   align-items: center;
 
@@ -306,9 +316,11 @@ main {
   align-items: center;
 }
 .btn-collage{
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 0px;
   color: white;
-  height: 40px;
-  margin-top: -50px;
+  height: 60px;
   padding: 12px;
   border-radius: 50px;
   border: none;
@@ -317,8 +329,12 @@ main {
   width: 650px;
   height: 710px;
 }
+.highlight-collage-card-img{
+  max-width: 100%;
+  border-radius: 16px 16px 0 0;
+}
 .collage-card-img{
-  width: 100%;
+  max-width: 100%;
   border-radius: 16px 16px 0 0;
 }
 #btn-color5{
@@ -337,14 +353,20 @@ main {
   background: #95B226;
 }
 .highlight-collage-card-content{
-  margin-top: -50px;
+  margin-top: -35px;
   width: 500px;
+  padding: 0 40px;
   justify-content: center;
-
+}
+.collage-card-content{
+  margin-top: -35px;
+  width: 200px;
+  padding: 0 40px;
+  justify-content: center;
 }
 
 /* Responsive for mobile */
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 576px) {
   .navbar {
     border: 0.5px solid #fea301;
     padding: 15px;
@@ -356,7 +378,7 @@ main {
   .nav-title,
   .nav-links,
   .btn-primary,
-  .btn-forward-previous {
+  .btn-forward-previous, .highlight-collage-card{
     display: none;
   }
   .banner {
@@ -369,5 +391,10 @@ main {
   .all-cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .collage-cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
   }
 }
