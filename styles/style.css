@@ -282,26 +282,26 @@ main {
 /* Section end */
 .collage{
   background: transparent;
-  gap: 40px;
+  gap: 150px;
   display: flex;
   justify-content: center;
   max-width: 1300px;
   margin: 0 auto;
   align-items: center;
 }
-.collage-cards {
+.collage-cards{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
+  gap: 47px;
   background: transparent;
 }
 .collage-card{
   border-radius: 16px;
 }
 .highlight-collage-card {
-  width: 650px;
-  height: 700px;
-  background: #ffffff;
+  width: 520px;
+  height: 600px;
+  /* background: #ffffff; */
   border-radius: 16px;
   align-items: center;
 }
@@ -325,8 +325,8 @@ main {
   border: none;
 }
 .collage-cards{
-  width: 650px;
-  height: 710px;
+  max-width: 650px;
+  max-height: 710px;
 }
 .highlight-collage-card-img{
   max-width: 100%;
@@ -353,9 +353,10 @@ main {
 }
 .highlight-collage-card-content{
   margin-top: -35px;
-  width: 500px;
+  width: 400px;
   padding: 0 40px;
   justify-content: center;
+  background: transparent;
 }
 .collage-card-content{
   margin-top: -35px;
@@ -434,7 +435,7 @@ main {
     flex-wrap: wrap-reverse;
   }
   .std-curriculum {
-    margin-top: 30.3rem;
+    margin-top: 25rem;
   }
   .all-cards {
     display: grid;
@@ -443,7 +444,7 @@ main {
   .collage-cards{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 10px;
+    gap: 5px;
   }
   .footer-info{
     display: grid;
