@@ -280,9 +280,6 @@ main {
   margin: 80px 0 60px 0;
 }
 /* Section end */
- /* {
-  border: 2px solid red;
-} */
 .collage{
   background: transparent;
   gap: 40px;
@@ -291,7 +288,6 @@ main {
   max-width: 1300px;
   margin: 0 auto;
   align-items: center;
-
 }
 .collage-cards {
   display: grid;
@@ -369,10 +365,11 @@ main {
 }
 /* Footer section */
 .footer-info{
-  border: 2px solid rebeccapurple;
+  /* border: 2px solid rebeccapurple; */
   display: flex;
   justify-content: space-between;
-  max-width: 1440px;
+  max-width: 1375px;
+  padding: 30px;
   margin: 0 auto;
 }
 .kids-education{
@@ -391,8 +388,31 @@ main {
 .kids-summary, .footer-content,.kids-description,.about-school{
   background: transparent;
 }
-
-
+.footer-anchor{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: transparent;
+}
+.title-about,.title-touch,.keep-touch,.communication-icon{
+  background: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+}
+.f-list{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  background: #01ACFD
+}
+.icon-decoration{
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 /* Responsive for mobile */
 @media screen and (max-width: 576px) {
   .navbar {
@@ -424,5 +444,9 @@ main {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
+  }
+  .footer-info{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
