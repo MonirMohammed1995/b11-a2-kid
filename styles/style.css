@@ -18,16 +18,28 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.bg-image1{
-  background-image: url(../assets/bg.png);
+.bg-image1 {
+  background: url(../assets/bg.png),
+    linear-gradient(
+      360deg,
+      rgba(254, 163, 1, 0.3) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    );
   background-repeat: no-repeat;
-  background-position: center;
 }
 .text-gray {
   color: #202020;
 }
 .text-light-gray {
   color: #808080;
+}
+.collage-title{
+  font-size: 1rem;
+  font-weight: 700;
+}
+.highlight-collage-title{
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 /* Navbar */
 .navbar,
@@ -99,6 +111,11 @@
 }
 .banner-description {
   font-size: 1.25rem;
+  line-height: 1.7rem;
+}
+.collage-description{
+  font-size: 1rem;
+  line-height: 1.75rem;
 }
 #color-org {
   color: #fea301;
@@ -137,7 +154,8 @@ main {
 .std-curriculum {
   /* border: 2px solid red; */
 }
-.curriculum-title {
+.curriculum-title,
+.stories-title {
   font-size: 2.9rem;
   font-weight: 700;
   color: #000000;
@@ -247,6 +265,82 @@ main {
   text-align: center;
   gap: 10px;
   margin: 80px 0 60px 0;
+}
+/* Section end */
+.our-stories {
+  border: 2px solid red;
+}
+.collage{
+  background: transparent;
+  gap: 40px;
+  display: flex;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  align-items: center;
+
+}
+.collage-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  background: transparent;
+}
+.collage-card{
+  border-radius: 16px;
+}
+.highlight-collage-card {
+  width: 650px;
+  height: 700px;
+  background: #ffffff;
+  border-radius: 16px;
+  align-items: center;
+}
+#btn-position {
+  display: flex;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  align-items: center;
+}
+.btn-collage{
+  color: white;
+  height: 40px;
+  margin-top: -50px;
+  padding: 12px;
+  border-radius: 50px;
+  border: none;
+}
+.collage-cards{
+  width: 650px;
+  height: 710px;
+}
+.collage-card-img{
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+#btn-color5{
+  background: #3CD8E8;
+}
+#btn-color4{
+  background: violet;
+}
+#btn-color3{
+  background: green;
+}
+#btn-color2{
+  background: #5D58F0;
+}
+#btn-color1{
+  background: #95B226;
+}
+.highlight-collage-card-content{
+  margin-top: -50px;
+  width: 500px;
+  justify-content: center;
+
 }
 
 /* Responsive for mobile */
