@@ -444,6 +444,9 @@
     display: flex;
     flex-wrap: wrap-reverse;
   }
+  .banner-content{
+    text-align: center;
+  }
   .std-curriculum {
     margin-top: 25rem;
   }
