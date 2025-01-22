@@ -273,7 +273,6 @@
   text-align: center;
   background: #fea301;
   border: none;
-
   gap: 20px;
 }
 .btn-forward-previous {
@@ -390,6 +389,7 @@
   width: 80px;
   height: 80px;
   margin-top: 20px;
+  /* background: transparent; */
 }
 .kids-education{
   display: flex;
@@ -398,6 +398,13 @@
 }
 .kids-summary, .footer-content,.kids-description,.about-school{
   background: transparent;
+}
+.kids-summary{
+  font-weight: 700;
+}
+.about-school>.title-about,.keep-touch>.title-touch{
+  font-size: 30px;
+  font-weight: 500;
 }
 .footer-anchor{
   display: flex;
