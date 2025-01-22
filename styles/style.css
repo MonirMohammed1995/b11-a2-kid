@@ -66,8 +66,9 @@
   height: 62px;
 }
 /* only on responsive */
-.menu-icon {
+.menu-mobile{
   display: none;
+  border: none;
 }
 .brand {
   align-items: center;
@@ -430,7 +431,7 @@
     padding: 15px;
   }
   #logo-kid,
-  .menu-icon {
+  .menu-mobile {
     display: flex;
   }
   .nav-title,
