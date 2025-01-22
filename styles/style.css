@@ -342,10 +342,12 @@
   font-weight: 500;
   margin-top: 0px;
   color: white;
+  width: 200px;
   height: 60px;
   padding: 12px;
   border-radius: 50px;
   border: none;
+  cursor: pointer;
 }
 .collage-cards{
   max-width: 650px;
@@ -413,6 +415,15 @@
   display: flex;
   background: transparent;
   color: #ffffff;
+}
+.kids-education-summary{
+  background: transparent;
+  max-width: 400px;
+  color: #ffffff;
+}
+.footer-content{
+  display: flex;
+  flex-direction: column;
 }
 .kids-summary, .footer-content,.kids-description,.about-school{
   background: transparent;
