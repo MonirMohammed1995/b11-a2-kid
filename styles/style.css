@@ -35,6 +35,24 @@
     );
   background-repeat: no-repeat;
 }
+.marq{
+  padding: 30px 0;
+}
+.marquee{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.offer-title{
+  font-size: 30px;
+  font-weight: 500;
+  color: rgba(6, 160, 134, 0.582);
+  background: transparent;
+}
+#mark-color{
+  color: tomato;
+  font-size: 35px;
+  background: transparent;
+}
 .bg-solid{
   background: #01ACFD;
 }
