@@ -358,16 +358,20 @@ main {
 }
 .highlight-collage-card-content{
   margin-top: -35px;
-  width: 400px;
+  max-width: 400px;
   padding: 0 40px;
   justify-content: center;
   background: transparent;
 }
 .collage-card-content{
   margin-top: -35px;
-  width: 200px;
+  max-width: 200px;
   padding: 0 40px;
   justify-content: center;
+}
+.view-btn{
+  background: transparent;
+  padding: 3.5rem;
 }
 /* Footer section */
 .footer-info{
